@@ -185,6 +185,12 @@ def index():
 def info():
     return render_template("info.html")
 
+@app.route("/database")
+def database():
+    qresults = User_Hist.query.all()
+    
+    return render_template("database.html", qresults=qresults)
+
 @app.route("/get")
 # Function for the bot response
 def get_bot_response():
