@@ -35,7 +35,7 @@
               <div class="carousel-caption text-left">
                 <h1 style="font-family: Agbalumo;font-size: 80px;">Revolutionizing Hospital Check-ins</h1>
                 <p>Experience seamless, swift entry into healthcare facilities with our chatbot's instant, intelligent screening and accurate appointment scheduling.</p>
-                <p><a class="btn btn-lg btn-primary" role="button">Chat now</a></p>
+                <p><a class="btn btn-lg btn-primary carousel-btn border border-white" style="background-color: #FBBC05;" role="button">Chat now</a></p>
               </div>
             </div>
           </div>
@@ -45,7 +45,7 @@
               <div class="carousel-caption">
                 <h1 style="font-family: Agbalumo;font-size: 80px;">24/7 Healthcare Navigator Unveiled</h1>
                 <p>No more waiting; immediate, round-the-clock healthcare guidance is at your fingertips, simplifying access and enhancing patient preparation.</p>
-                <p><a class="btn btn-lg btn-primary" role="button">Learn more</a></p>
+                <p><a class="btn btn-lg btn-primary" style="background-color: #FBBC05;" role="button">Learn more</a></p>
               </div>
             </div>
           </div>
@@ -55,16 +55,16 @@
               <div class="carousel-caption text-right">
                 <h1 style="font-family: Agbalumo;font-size: 80px;">AI Triage: Immediate, Accurate</h1>
                 <p>Our chatbot transforms urgent care with real-time, AI-powered symptom analysis, prioritizing critical needs and reducing dangerous wait times.</p>
-                <p><a class="btn btn-lg btn-primary" role="button">Our Story</a></p>
+                <p><a class="btn btn-lg btn-primary" style="background-color: #FBBC05;" role="button">Our Story</a></p>
               </div>
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="." role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="." role="button" data-slide="next">
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
@@ -75,23 +75,28 @@
       ================================================== -->
       <!-- Wrap the rest of the page in another container to center all the content. -->
 
-      <div class="container marketing">
-
+      <div class="container-fluid marketing">
+        <div class="orange-background" style="width:100%; height:70px; margin-top: -20px; margin-bottom: 40px; padding-left: 15px; padding-right: 15px;">
+          <h1 class="orange-text" style="margin-bottom: 8%; text-align: center;">Problems & Our Solutions</h1>
+        </div>
+      
         <!-- Three columns of text below the carousel -->
         <div class="row">
-          <h1 style="margin-bottom: 8%;">Problems & Our Solutions</h1>
           <div class="col-lg-4">
-            <img style="margin-bottom: 10%;" class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <img style="margin-bottom: 10%;" class="rounded-circle" src="{{ url_for('static', filename='images/info_problems/longwaittimes.jpg') }}"
+ alt="Generic placeholder image" width="140" height="140">
             <h2 style="margin-bottom: 3%;">Long Wait Times</h2>
             <p style="text-align: left; padding-left: 20px;"><b>Solution:</b> Implement intelligent chatbot to automate patient intake, ensuring immediate, appropriate appointment scheduling to wait times.</p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <img style="margin-bottom: 10%;" class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <img style="margin-bottom: 10%;" class="rounded-circle" src="{{ url_for('static', filename='images/info_problems/inefficient.jpg') }}"
+ alt="Generic placeholder image" width="140" height="140">
             <h2 style="margin-bottom: 3%;">Inefficient Triage</h2>
             <p style="text-align: left; padding-left: 20px;"><b>Solution:</b> Utilize advanced AI algorithms to prioritize patients based on symptom severity and medical urgency, reasonably organizing visits.</p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <img style="margin-bottom: 10%;" class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <img style="margin-bottom: 10%;" class="rounded-circle" src="{{ url_for('static', filename='images/info_problems/data.jpg') }}"
+ alt="Generic placeholder image" width="140" height="140">
             <h2 style="margin-bottom: 3%;">Insufficient Data</h2>
             <p style="text-align: left; padding-left: 20px;"><b>Solution:</b> Organizing data analytics from the chatbot conversations, providing instant insights into a patient's conditions and medical history. </p>
           </div><!-- /.col-lg-4 -->
@@ -104,7 +109,7 @@
 
         <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading">The<span style="font-family: agbalumo;font-size: 80px;"> Problem</span></h2>
+            <h2 class="featurette-heading">The<span class="orange-text" style="font-family: agbalumo;font-size: 80px;"> Problem</span></h2>
             <p class="lead">In the healthcare sector, the persistent challenge of inefficient front-desk operations—marked by prolonged wait times, inaccurate triage, and suboptimal resource allocation—compromises patient care quality, strains medical personnel, and hinders overall service efficiency, necessitating an innovative, technology-driven intervention.</p>
           </div>
           <div class="col-md-5">
@@ -116,7 +121,7 @@
 
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">Future of<span style="font-family: Agbalumo;margin-left: 20px; font-size: 80px;">Healthcare Navigation</span></h2>
+            <h2 class="featurette-heading">Future of<span class="orange-text" style="font-family: Agbalumo;margin-left: 20px; font-size: 80px;">Healthcare Navigation</span></h2>
             <p class="lead">Transforming patient journeys with our 24/7 intelligent chatbot; experience instant, precise healthcare navigation, and personalized appointment scheduling, all at your fingertips, saving time and enhancing your care from the first click.</p>
           </div>
           <div class="col-md-5 order-md-1">
@@ -128,7 +133,7 @@
 
         <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading">Our<span style="font-family: Agbalumo; font-size: 80px;"> Vision</span></h2>
+            <h2 class="featurette-heading">Our<span class="orange-text" style="font-family: Agbalumo; font-size: 80px;"> Vision</span></h2>
             <p class="lead">Envisioning a future where healthcare is seamlessly integrated into daily life, our project strives to pioneer a holistic digital health ecosystem, leveraging AI and telemedicine to empower individuals with unprecedented access, personalized insights, and proactive engagement, fundamentally transforming the global standard of patient-centered care.</p>
           </div>
           <div class="col-md-5">

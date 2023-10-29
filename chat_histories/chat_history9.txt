@@ -1,13 +1,1 @@
 
-
-29/10 07:46:07 User: i'm not feelign well 
-29/10 07:46:07 Hello, I'm sorry to hear that. May I have your name and date of birth to access your record?
-
-29/10 07:46:16 User: john all, nov 19th 1990 
-29/10 07:46:16 Thank you, John. Can you describe your symptoms for me? Are there any other issues you've been experiencing?
-
-29/10 07:46:25 User: nausea, dizziness, and fever 
-29/10 07:46:25 I'm sorry to hear that, John. Can you please tell me more about these symptoms? When did they start and how severe are they?
-
-29/10 07:49:33 User: john 1928/23/23 
-29/10 07:49:33 I'm sorry, John. I couldn't understand what you meant by "john 1928/23/23." May I have your correct name and date of birth to access your record and assist you further?

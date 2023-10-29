@@ -28,6 +28,11 @@ body {
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
+  text-shadow:
+    -0.04rem -0.04rem 0 gray,
+    0.04rem -0.04rem 0 gray,
+    -0.04rem 0.04rem 0 gray,
+    0.04rem 0.04rem 0 gray;
 }
 
 /* Declare heights because of positioning of img element */
@@ -41,6 +46,12 @@ body {
   left: 0;
   min-width: 100%;
   height: 32rem;
+  filter: blur(1.9px);
+}
+
+.carousel-btn {
+  background-color: #FBBC05;
+  border: white;
 }
 
 
