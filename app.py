@@ -3,10 +3,11 @@ from flask import Flask, render_template, request, redirect
 import openai
 import os
 import time
+from dotenv import load_dotenv
+load_dotenv()
 
-# Set the OpenAI API key
-#openai.api_key = "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" #mine
-openai.api_key = "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"
+# Set the OpenAI API key from environment variable
+openai.api_key = os.environ.get("OPENAI_API_KEY")
 
 # Define the name of the bot
 name = 'BOT'
