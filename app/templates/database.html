@@ -23,34 +23,34 @@
 
 
 {% block content %} 
-<div class="container" style="width: 90%;">
-<table class="table table-hover" style="width: 100%;border-collapse: separate; border-spacing: 0px 10px;margin-top: -10px;text-align: center;"> 
+<div class="container" style="width: 100%;">
+<table class="table table-hover" style="width: 100%;border-collapse: separate; border-spacing: 0px 10px;margin-top: -30px;text-align: center;"> 
 <thead>
-    <tr style="color:#1624A1;font-size: 14px;">
+    <tr style="color:#1624A1;font-size: 18px;">
+      <th id="name">Name</th>
+      <th id="birthday" style="width: 10%;">Birthday</th>
         <th id="summary" style="text-align: left;">Past Diagnosis</th>
-        <th id="name">Name</th>
-        <th id="birthday">Birthday</th>
         <th id="symptoms">Symptoms</th>
         <th id="allergies">Allergies</th>
         <th id="chronic_illnesses">Chronic Illnesses</th>
         <th id="doctor_status">Doctor Status</th>
         <th id="medications">Medications</th>
         <th id="past_diagnosis">Summary</th>
-        <th id="apptDate">Date</th>
+        <th id="apptDate" style="width: 10%;">Date</th>
     </tr>
   </thead>
-<tbody id="table_id" style="border-radius: 20px;font-size: 12px;">
+<tbody id="table_id" style="border-radius: 20px;font-size: 16px;">
   {% for info in data %}
   <tr id = "content" style="background-color: white; padding: 2px;">
-    <td id="summary" style="text-align: left;">{{ info.summary }}</td>
     <td id="name">{{ info.name }}</td>
     <td id="birthday">{{ info.birthday }}</td>
+    <td id="summary">{{ info.summary }}</td>
     <td id="symptoms">{{ info.symptoms }}</td>
     <td id="allergies">{{ info.allergies }}</td>
     <td id="chronic_illnesses">{{ info.chronic_illnesses }}</td>
     <td id="doctor_status">{{ info.doctor_status }}</td>
     <td id="medications">{{ info.medications }}</td>
-    <td id="past_diagnosis">{{ info.past_diagnosis }}</td>
+    <td id="past_diagnosis" style="text-align: left;">{{ info.past_diagnosis }}</td>
     <td id="apptDate">{{ info.apptDate }}</td>
   </tr>
   {% endfor %}
