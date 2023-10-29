@@ -1,0 +1,10 @@
+
+
+29/10 07:27:01 User: i'm not feeling very well 
+29/10 07:27:01 Hello, I'm sorry to hear that. May I have your name and birthday to access your record?
+
+29/10 07:27:12 User: john all, november 18th 1990 
+29/10 07:27:12 Thank you, John. What symptoms have you been experiencing? Please describe them for me so that I can assist you better.
+
+29/10 07:27:25 User: nausea, fever, difficulty breathing 
+29/10 07:27:25 I'm sorry to hear that, John. How long have you been experiencing these symptoms and would you say they are mild, moderate, or severe?

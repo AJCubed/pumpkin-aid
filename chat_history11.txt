@@ -1,0 +1,31 @@
+
+
+29/10 07:28:25 User: i'm not feeling well 
+29/10 07:28:25 Hello, I'm sorry to hear that. Before we can schedule an appointment, may I have your name and birthday to access your record?
+
+29/10 07:28:35 User: john all, november 18th 1990 
+29/10 07:28:35 Thank you, John. Can you tell me a bit more about your symptoms? What symptoms have you been having? Please tell me as much as you can, so we can determine the best course of action.
+
+29/10 07:28:49 User: some nausea, fever, difficulty breathing 
+29/10 07:28:49 I'm sorry to hear that, John. How long have these symptoms been going on? Also, can you tell me how severe they are (mild, moderate, severe)?
+
+29/10 07:29:13 User: a week now, so it's not great. not horrible but it's getting worse 
+29/10 07:29:13 I understand, John. Thank you for sharing that information with me. Do you have any known allergies to medications, food, or other substances?
+
+29/10 07:29:18 User: no 
+29/10 07:29:18 Thank you, John. Are there any chronic illnesses that run in your family (e.g., diabetes, hypertension, heart diseases) that we should be aware of?
+
+29/10 07:29:22 User: no 
+29/10 07:29:22 Okay, thank you for letting me know. Have you recently seen any doctor for this issue or received any treatment?
+
+29/10 07:29:26 User: no 
+29/10 07:29:26 Alright, John. Are you currently taking any medications for any reason? If yes, please tell me the name and what they are for.
+
+29/10 07:29:50 User: none 
+29/10 07:29:50 Thank you for letting me know, John. Based on the symptoms you described, I would recommend you to see a doctor from our cardiology department. They specialize in breathing issues and heart-related conditions. Would you like me to schedule an appointment for you with our cardiology department?
+
+29/10 07:29:58 User: yes 
+29/10 07:29:58 Great, John. Can you please suggest a preferred date for your appointment? I will check availability and get back to you shortly.
+
+29/10 07:30:13 User: november 20th would be great 
+29/10 07:30:13 Alright, John. I have scheduled your appointment with the cardiology department on November 20th. We'll send you a confirmation message shortly with all the details. Is there anything else I can help you with?

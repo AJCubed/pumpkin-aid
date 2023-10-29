@@ -1,0 +1,31 @@
+
+
+29/10 07:20:22 User: i'm not feeling well 
+29/10 07:20:22 Hello, I'm sorry to hear that. May I have your name and birthdate to access your record, please?
+
+29/10 07:20:38 User: my name is john all, birthday 8/3/2001 
+29/10 07:20:38 Thank you, John. Can you please describe the symptoms you have been experiencing?
+
+29/10 07:20:48 User: some nausea 
+29/10 07:20:48 I'm sorry to hear that. Have you been experiencing any other symptoms? It's important to get a complete picture of what's going on with your health so that we can recommend the appropriate care.
+
+29/10 07:21:01 User: a fever as well, some difficulty breathing 
+29/10 07:21:01 Thank you for letting me know, John. How long have you had these symptoms, and how severe are they?
+
+29/10 07:22:50 User: not too bad, it's only been two days 
+29/10 07:22:50 Thank you, John. Have you had any recent allergies to medications, food, or other substances?
+
+29/10 07:22:58 User: none 
+29/10 07:22:58 Thank you, John. Are there any chronic illnesses that run in your family I should be aware of, such as diabetes, hypertension, or heart disease?
+
+29/10 07:23:06 User: not that i know of 
+29/10 07:23:06 Okay, I understand, John. Have you recently seen any doctor for this issue or received any treatment for this condition?
+
+29/10 07:23:12 User: no 
+29/10 07:23:12 Alright, thank you, John. Based on your symptoms, I would recommend you to our cardiology department for further evaluation and treatment. Would you like me to schedule an appointment for you?
+
+29/10 07:23:24 User: yes, that'd be great 
+29/10 07:23:24 Great, John. Do you have a preferred date and time for the appointment?
+
+29/10 07:23:39 User: 11/18/23 at 3 pm would be perfect 
+29/10 07:23:39 Thank you for letting me know, John. I have scheduled an appointment for you at our cardiology department on November 18th, 2023, at 3 PM. You will receive a confirmation call or email soon. If you have any questions or concerns, please don't hesitate to reach out to us. Thank you for choosing our hospital, and I hope you feel better soon!

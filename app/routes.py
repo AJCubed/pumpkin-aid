@@ -33,17 +33,16 @@ role = 'Hospital Front Desk'
 
 # Define the impersonated role with instructions
 impersonated_role = f"""
-    You are a hospital front desk AI agent, please address yourself as a healthcare navigation AI agent. Patients are coming to you for help scheduling appointments for various illnesses. Be aware that you are dealing with personal and sensitive information.
+    You are a hospital front desk AI agent. Patients are coming to you for help scheduling appointments for various illnesses. Be aware that you are dealing with personal and sensitive information.
     You must establish all of these details during the conversation. However, please speak at a natural pace, but professionally without reciting these questions word-for-word.
         1. "May I have your name and birthday to access your record?"
         2. What symptoms have they been having? Are there any others? Ask until they have no more issues to report.
         3. How long have symptoms been going on?  How severe are they (mild, moderate, severe)? 
         4. If they have any known allergies to medications, food, or other substances.
         5. Are there any chronic illnesses that run in their family? (e.g., diabetes, hypertension, heart diseases)
-        6. Have they recently seen any doctor for this issue or received any treatment?
-        7. Are they currently on any medications? If so, what are they for?
-        8. Have they been diagnosed with any related medical conditions in the recent past?
-        9. Suggest a hospital department suitable for treating them (cardiology for breathing issues, etc), and ask if they would like to schedule an appointment.
+        6. Are they currently on any medications? If so, what are they for?
+        7. Have they been diagnosed with any related medical conditions in the recent past?
+        8. Suggest a hospital department suitable for treating them (cardiology for breathing issues, etc), and ask if they would like to schedule an appointment.
         9. If they would like an appointment, ask for a preferred date and tell the user their appointment will be scheduled shortly. If not, cordially end the conversation.
 """
 
@@ -61,8 +60,9 @@ output_format = f"""
             "summary": string
             "apptDate": date
         }}
-    Birthday and apptDate should be of mm-dd-yy types (if it's entered as a word, convert it), 
+    Birthday and apptDate should be of mm-dd-yy types (if it's entered as a word, convert it). The current year is 2023. 
     Symptoms, allergies, chronic_illnesses, medications,doctor_status, past_diagnosis,  should be only keywords, and summary should be a short paragraph of the entire conversation, symptoms, important information, severity, and duration for suggested doctor reference.
+    Do not write anything other than this JSON file.
 """
 
 # Initialize variables for chat history
@@ -141,31 +141,13 @@ def generate_json_summary(filename):
         max_tokens=2000,
         messages=messages
     )
-    GPT_res = output.choices[0].message["content"]
 
-    print(GPT_res)
-    print(type(GPT_res))
+    output = output.choices[0].message["content"]
+    start = output.find("{")
+    end = output.rfind("}")+1 
+    output = output[start:end]
 
-    user_name = GPT_res["name"]
-    user_birthday = GPT_res["birthday"]
-    user_symptoms = GPT_res["symptoms"]
-    user_allergies = GPT_res["allergies"]
-    user_chronic_illnesses = GPT_res["chronic_illnesses"]
-    user_doctor_status = GPT_res["doctor_status"]
-    user_allergies = GPT_res["allergies"]
-    user_medications = GPT_res["medications"]
-    user_summary = GPT_res["summary"]
-    user_past_diagnosis = GPT_res["medications"]
-    user_apptDate = GPT_res["apptDate"]
-
-    User_entry = User_Hist(user_name, user_birthday, user_symptoms, user_allergies, user_chronic_illnesses, user_doctor_status, user_allergies, user_medications, user_summary, user_past_diagnosis, user_apptDate)
-
-    db.session.add(User_entry)
-    db.session.commit()
-
-    return print(output.choices[0].message["content"])
-
-
+    print(output)
 
 
 # Define app routes
