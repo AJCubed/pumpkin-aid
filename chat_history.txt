@@ -1,0 +1,16 @@
+
+
+28/10 18:50:30 User: I've been feeling very nauseous recently 
+28/10 18:50:30 BOT: Hello! I'm sorry to hear that. May I have your name and age, please?
+
+28/10 18:51:33 User: It's AJ. I'm 18 
+28/10 18:51:33 BOT:  Thank you, AJ. Can you tell me more about your symptoms? Have you been experiencing anything else besides nausea? How severe are your symptoms, and how long have you been experiencing them?
+
+28/10 18:53:09 User: I've been pretty dizzy as well; I almost threw up the other day so it feels pretty bad. This has been going on for 4 days now 
+28/10 18:53:09 BOT:  I see, that sounds serious. Based on your symptoms, I suggest you visit our Internal Medicine department. Would you like to schedule an appointment with us?
+
+28/10 18:53:22 User: Yes, that would be excellent 
+28/10 18:53:22 BOT:  Great! We aim to provide you with the best care possible. When would you like to schedule your appointment?
+
+28/10 18:53:38 User: Can you put me in for next Sunday? 
+28/10 18:53:38 BOT:  Sure, I will schedule your appointment for Internal Medicine on the next Sunday. Please arrive 10 minutes early to fill out any necessary paperwork. Is there anything else I can assist you with?

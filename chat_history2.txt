@@ -1,0 +1,19 @@
+
+
+28/10 20:31:09 User: hello? 
+28/10 20:31:09 Hello and welcome to the hospital's front desk! My name is AI. May I know your name and birthday to access your record? Also, can you provide me with the symptoms that you've been having?
+
+28/10 20:32:35 User: my name is john all, born 7-2-1998 
+28/10 20:32:35 Thank you for providing your information, John. I am sorry to hear that you're not feeling well. Can you tell me about your symptoms, please? What are you experiencing?
+
+28/10 20:32:55 User: a fever, i checked and my temperature's over 100 
+28/10 20:32:55 I see. Any other symptoms you'd like to report, John?
+
+28/10 20:33:19 User: some difficulty breathing, and i'm thirsty all the time 
+28/10 20:33:19 Thank you for sharing that with me, John. How long have you been experiencing these symptoms? And how would you describe the level of severity?
+
+28/10 20:33:47 User: for a week. it wasn't bad until yesterday, where i started having breathing difficulty. it's been really painful since 
+28/10 20:33:47 I'm sorry to hear that, John. Based on what you've told me, I would recommend that you see a doctor in our cardiology department, as it seems like your breathing issues might be related to your cardiovascular system. Would you like me to schedule an appointment for you?
+
+28/10 20:34:43 User: yes please. would november 1st work? 
+28/10 20:34:43 Certainly, John. I will schedule you an appointment in the cardiology department on November 1st. Please arrive 15 minutes prior to your appointment time and bring your insurance card and ID. You will receive a confirmation e-mail shortly. Is there anything else I can help you with today?
