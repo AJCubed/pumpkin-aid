@@ -36,6 +36,11 @@ body {
     font-family: "Calibri", "Roboto", sans-serif;
 }
 
+@font-face {
+    font-family: Montserrat;
+    src: url(/static/styles/fonts/Montserrat-VariableFont_wght.ttf/);
+}
+
 .chat_window {
     position: absolute;
     width: calc(100% - 20px);
