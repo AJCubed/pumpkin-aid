@@ -1,8 +1,3 @@
-#textInput {
-    border: 2px solid black;
-    border-bottom: 3px solid aqua;
-}
-
 .userText {
     color: white;
     font-family: monospace;
@@ -12,14 +7,14 @@
 }
 
 .userText span {
-    background-color: #009688;
+    background-color: #1624A1;
     padding: 10px;
     border-radius: 10px;
     right: 10%;
 }
 
 .botText {
-    color: white;
+    color: black;
     font-family: monospace;
     font-size: 17px;
     text-align: left;
@@ -27,7 +22,7 @@
 }
 
 .botText span {
-    background-color: #3aafa9;
+    background-color: #f7f7f7;
     padding: 5px;
     border-radius: 10px;
 }
@@ -45,12 +40,12 @@ body {
     position: absolute;
     width: calc(100% - 20px);
     width: 100vw;
-    height: 92vh;
+    height: calc(100% - 44px);
     border-radius: 10px;
     background-color: #fff;
     left: 50%;
     top: 50%;
-    margin-top: 2%;
+    margin-top: 44px;
     transform: translateX(-50%) translateY(-50%);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     background-color: #fff;
@@ -58,7 +53,7 @@ body {
 }
 
 
-
+/* 
 .top_menu {
     background-color: #fff;
     width: 100%;
@@ -78,9 +73,9 @@ body {
     display: inline-block;
     margin-right: 10px;
     position: relative;
-}
+} */
 
-.top_menu .buttons .button.close {
+/* .top_menu .buttons .button.close {
     background-color: #f5886e;
 }
 
@@ -97,14 +92,14 @@ body {
     margin-left: 5px;
     color: #bcbdc0;
     font-size: 20px;
-}
+} */
 
 .messages {
     position: relative;
     list-style: none;
     padding: 20px 10px 0 10px;
     margin: 0;
-    height: 347px;
+    height: 85%;
     overflow: scroll;
 }
 
@@ -114,7 +109,7 @@ body {
     margin-bottom: 20px;
     transition: all 0.5s linear;
     opacity: 0;
-    width: 80%;
+    width: 90%;
 }
 
 .messages .message.left .avatar {
@@ -123,7 +118,7 @@ body {
 }
 
 .messages .message.left .text_wrapper {
-    background-color: #3aafa9;
+    background-color: #1624A1;
     margin-left: 10px;
 }
 
@@ -139,14 +134,16 @@ border-right-color: #3aafa9;
     float: left;
     width: 50px;
     height: 50px;
-    background-image: url("https://pas-wordpress-media.s3.amazonaws.com/wp-content/uploads/2013/08/Customer-service-woman-on-headset-gives-OK-1024x770.jpg");
+    background-image: url("/static/images/Avatar.svg");
+    background-color: #f7f7f7;
     background-size: cover;
     border-radius: 50%;
     margin-right: 10px;
 }
 
 .messages .message.right .text_wrapper {
-    background-color: #c7eafc;
+    background-color: #f7f7f7;
+    color: black;
     margin-right: 20px;
     float: right;
 }
@@ -154,11 +151,11 @@ border-right-color: #3aafa9;
 .messages .message.right .text_wrapper::after,
 .messages .message.right .text_wrapper::before {
     left: 100%;
-    border-left-color: #c7eafc;
+    border-left-color: #f7f7f7;
 }
 
 .messages .message.right .text {
-    color: #45829b;
+    color: black;
 }
 
 .messages .message.appeared {
@@ -241,8 +238,8 @@ border-right-color: #3aafa9;
     height: 50px;
     display: inline-block;
     border-radius: 50px;
-    background-color: #3aafa9;
-    border: 2px solid #3aafa9;
+    background-color: #FBBC05;
+    border: 2px solid #FBBC05;
     color: #fff;
     cursor: pointer;
     transition: all 0.2s linear;

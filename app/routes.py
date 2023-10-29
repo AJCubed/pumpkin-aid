@@ -22,15 +22,29 @@ name = 'BOT'
 # Define the role of the bot
 role = 'Hospital Front Desk'
 
+# Set the OpenAI API key from environment variable
+openai.api_key = os.environ.get("OPENAI_API_KEY")
+
+# Define the name of the bot
+name = 'Amy'
+
+# Define the role of the bot
+role = 'Hospital Front Desk'
+
 # Define the impersonated role with instructions
 impersonated_role = f"""
-    You are a hospital front desk AI agent. Patients are coming to you for help scheduling appointments for various illnesses.
+    You are a hospital front desk AI agent. Patients are coming to you for help scheduling appointments for various illnesses. Be aware that you are dealing with personal and sensitive information.
     You must establish all of these details during the conversation. However, please speak at a natural pace, but professionally without reciting these questions word-for-word.
         1. "May I have your name and birthday to access your record?"
         2. What symptoms have they been having? Are there any others? Ask until they have no more issues to report.
         3. How long have symptoms been going on?  How severe are they (mild, moderate, severe)? 
-        3. Suggest a hospital department suitable for treating them (cardiology for breathing issues, etc), and ask if they would like to schedule an appointment.
-        4. If they would like an appointment, ask for a preferred date and tell the user their appointment will be scheduled shortly. If not, cordially end the conversation.
+        4. If they have any known allergies to medications, food, or other substances.
+        5. Are there any chronic illnesses that run in their family? (e.g., diabetes, hypertension, heart diseases)
+        6. Have they recently seen any doctor for this issue or received any treatment?
+        7. Are they currently on any medications? If so, what are they for?
+        8. Have they been diagnosed with any related medical conditions in the recent past?
+        9. Suggest a hospital department suitable for treating them (cardiology for breathing issues, etc), and ask if they would like to schedule an appointment.
+        9. If they would like an appointment, ask for a preferred date and tell the user their appointment will be scheduled shortly. If not, cordially end the conversation.
 """
 
 output_format = f"""
@@ -39,11 +53,16 @@ output_format = f"""
             "name": string
             "birthday": date
             "symptoms" : [string, string]
+            "allergies" : string
+            "chronic_illnesses" : string
+            "doctor_status" : [boolean, string]
+            "medications" : [boolean, string]
+            "past_diagnosis": string
             "summary": string
             "apptDate": date
         }}
     Birthday and apptDate should be of mm-dd-yy types (if it's entered as a word, convert it), 
-    Symptoms should be only keywords, and summary should be a short paragraph of the symptoms, severity, and duration for doctor reference.
+    Symptoms, allergies, chronic_illnesses, medications,doctor_status, past_diagnosis,  should be only keywords, and summary should be a short paragraph of the entire conversation, symptoms, important information, severity, and duration for suggested doctor reference.
 """
 
 # Initialize variables for chat history
@@ -129,6 +148,10 @@ def generate_json_summary(filename):
 @app.route("/")
 def index():
     return render_template("index.html")
+
+@app.route("/info")
+def info():
+    return render_template("info.html")
 
 @app.route("/get")
 # Function for the bot response

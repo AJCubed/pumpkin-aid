@@ -1,0 +1,162 @@
+{% extends "base.html" %} 
+{% block title %}Chat Page{% endblock %}
+
+{% block head %} 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Easily check your health symptoms with our quick and comprehensive online screening tool.">
+    <meta name="author" content="Team Pumpkin">
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <link rel="canonical" href="/static/styles/info_page/carousel/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/styles/info_page/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/styles/info_page/carousel.css" rel="stylesheet">
+    {% endblock %} 
+
+    {% block content %}
+    <main role="main">
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+          <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+          <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img class="first-slide" src="/static/images/info_pics/pic1.jpg" alt="First slide" style="height: 520px;width: 500 auto;object-fit: cover;">
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1 style="font-family: Agbalumo;font-size: 80px;">Revolutionizing Hospital Check-ins</h1>
+                <p>Experience seamless, swift entry into healthcare facilities with our chatbot's instant, intelligent screening and accurate appointment scheduling.</p>
+                <p><a class="btn btn-lg btn-primary" role="button">Chat now</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="second-slide" src="/static/images/info_pics/pic2.jpg" alt="Second slide" style="height: 520px;width: auto;object-fit: cover;">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1 style="font-family: Agbalumo;font-size: 80px;">24/7 Healthcare Navigator Unveiled</h1>
+                <p>No more waiting; immediate, round-the-clock healthcare guidance is at your fingertips, simplifying access and enhancing patient preparation.</p>
+                <p><a class="btn btn-lg btn-primary" role="button">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <img class="third-slide" src="/static/images/info_pics/pic3.jpg" alt="Third slide" style="height: 520px;width: 500 auto;object-fit: cover;">
+            <div class="container">
+              <div class="carousel-caption text-right">
+                <h1 style="font-family: Agbalumo;font-size: 80px;">AI Triage: Immediate, Accurate</h1>
+                <p>Our chatbot transforms urgent care with real-time, AI-powered symptom analysis, prioritizing critical needs and reducing dangerous wait times.</p>
+                <p><a class="btn btn-lg btn-primary" role="button">Our Story</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="." role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="." role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <h1 style="margin-bottom: 8%;">Problems & Our Solutions</h1>
+          <div class="col-lg-4">
+            <img style="margin-bottom: 10%;" class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2 style="margin-bottom: 3%;">Long Wait Times</h2>
+            <p style="text-align: left; padding-left: 20px;"><b>Solution:</b> Implement intelligent chatbot to automate patient intake, ensuring immediate, appropriate appointment scheduling to wait times.</p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img style="margin-bottom: 10%;" class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2 style="margin-bottom: 3%;">Inefficient Triage</h2>
+            <p style="text-align: left; padding-left: 20px;"><b>Solution:</b> Utilize advanced AI algorithms to prioritize patients based on symptom severity and medical urgency, reasonably organizing visits.</p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img style="margin-bottom: 10%;" class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2 style="margin-bottom: 3%;">Insufficient Data</h2>
+            <p style="text-align: left; padding-left: 20px;"><b>Solution:</b> Organizing data analytics from the chatbot conversations, providing instant insights into a patient's conditions and medical history. </p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">The<span style="font-family: agbalumo;font-size: 80px;"> Problem</span></h2>
+            <p class="lead">In the healthcare sector, the persistent challenge of inefficient front-desk operations—marked by prolonged wait times, inaccurate triage, and suboptimal resource allocation—compromises patient care quality, strains medical personnel, and hinders overall service efficiency, necessitating an innovative, technology-driven intervention.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="height: 520px;width: auto;object-fit: cover;" src="/static/images/info_pics/pic4.jpg" data-holder-rendered="true">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Future of<span style="font-family: Agbalumo;margin-left: 20px; font-size: 80px;">Healthcare Navigation</span></h2>
+            <p class="lead">Transforming patient journeys with our 24/7 intelligent chatbot; experience instant, precise healthcare navigation, and personalized appointment scheduling, all at your fingertips, saving time and enhancing your care from the first click.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="/static/images/info_pics/pic5.jpg" data-holder-rendered="true" style="height: 520px;width: auto;object-fit: cover;">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Our<span style="font-family: Agbalumo; font-size: 80px;"> Vision</span></h2>
+            <p class="lead">Envisioning a future where healthcare is seamlessly integrated into daily life, our project strives to pioneer a holistic digital health ecosystem, leveraging AI and telemedicine to empower individuals with unprecedented access, personalized insights, and proactive engagement, fundamentally transforming the global standard of patient-centered care.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="/static/images/info_pics/pic6.jpg" data-holder-rendered="true" style="height: 520px;width: auto;object-fit: cover;">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+      </div><!-- /.container -->
+
+      <!-- FOOTER -->
+      <footer style="color: white;background-color: black; margin-top: auto;height: 100px;">
+        <div class="container">
+          <a href="/info" style="color: white;float: right;">Back to top</a>
+        <p>© 2023-2024 Pumpkin, Inc. · Privacy · Terms</p>
+      </div>
+      </footer>
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/static/styles/info_page/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="/static/styles/info_page/popper.min.js"></script>
+    <script src="/static/styles/info_page/bootstrap.min.js"></script>
+
+{% endblock %} 
