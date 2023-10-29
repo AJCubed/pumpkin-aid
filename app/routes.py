@@ -2,6 +2,7 @@
 from app import app, db
 from flask import Flask, render_template, request, redirect
 from sqlalchemy import create_engine, false, true
+import json
 import openai
 import os
 import time
@@ -51,11 +52,11 @@ output_format = f"""
         {{
             "name": string
             "birthday": date
-            "symptoms" : [string, string]
+            "symptoms" : "symptom1, symptom2(if existent)"
             "allergies" : string
             "chronic_illnesses" : string
-            "doctor_status" : [boolean, string]
-            "medications" : [boolean, string]
+            "doctor_status" : "no, or doctors"
+            "medications" : "no, or medications"
             "past_diagnosis": string
             "summary": string
             "apptDate": date
@@ -153,7 +154,26 @@ def generate_json_summary(filename):
     end = output.rfind("}")+1 
     output = output[start:end]
 
-    print(output)
+    
+    GPT_res = json.loads(output)
+    print(GPT_res)
+
+    user_name = GPT_res["name"]
+    user_birthday = GPT_res["birthday"]
+    user_symptoms = GPT_res["symptoms"]
+    user_chronic_illnesses = GPT_res["chronic_illnesses"]
+    user_doctor_status = GPT_res["doctor_status"]
+    user_allergies = GPT_res["allergies"]
+    user_medications = GPT_res["medications"]
+    user_summary = GPT_res["summary"]
+    user_past_diagnosis = GPT_res["past_diagnosis"]
+    user_apptDate = GPT_res["apptDate"]
+
+    User_entry = User_Hist(user_name, user_birthday, user_symptoms, user_allergies, user_chronic_illnesses, 
+                           user_doctor_status, user_medications, user_summary, user_past_diagnosis, user_apptDate)
+
+    db.session.add(User_entry)
+    db.session.commit()
 
 
 # Define app routes
@@ -178,5 +198,5 @@ def refresh():
 
 # Run the Flask app
 if __name__ == "__main__":
-    generate_json_summary("chat_history.txt")
+    generate_json_summary("/chat_histories/chat_history1.txt")
     # app.run()

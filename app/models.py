@@ -14,15 +14,15 @@ class User_Hist(db.Model):
     apptDate = db.Column(db.String(50))
     
 
-    def __init__(self, name, birthday, symptoms,allergies, chronic_illnesses, doctor_status, medications, summary, past_diagnosis, apptDate):
+    def __init__(self, name, birthday, symptoms, allergies, chronic_illnesses, 
+                 doctor_status, medications, past_diagnosis, summary, apptDate):
         self.name = name
         self.birthday = birthday
         self.symptoms = symptoms
         self.allergies = allergies
         self.chronic_illnesses = chronic_illnesses
         self.doctor_status = doctor_status
-        self.allergies = allergies
         self.medications = medications
+        self.past_diagnosis = past_diagnosis
         self.summary = summary
-        self.past_diagnosis = medications
         self.apptDate = apptDate

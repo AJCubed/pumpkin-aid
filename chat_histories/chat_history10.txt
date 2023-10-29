@@ -1,0 +1,10 @@
+
+
+29/10 07:51:34 User: my name is john all, birthday november 19th 1990 
+29/10 07:51:34 AI: Thank you, John. How may I help you today?
+
+29/10 07:52:22 User: name is john all, birthday nov 19th, 1990 
+29/10 07:52:22 AI: Thank you for providing your details, John. What symptoms have you been experiencing lately? Are there any other issues that you've been facing?
+
+29/10 07:54:00 User: name is john all, birthday nov 19th, 1990 
+29/10 07:54:00 Thank you for providing your details, John. What brings you to the hospital today? Any specific issues or symptoms that you've been experiencing lately?

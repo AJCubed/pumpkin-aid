@@ -1,0 +1,4 @@
+
+
+29/10 08:07:13 User: my name is john all, my birthday is november 19th 1990 
+29/10 08:07:13 AI: Thank you for providing that information, John. May I have your last name as well, please?
