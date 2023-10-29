@@ -6,7 +6,7 @@ import openai
 import os
 import time
 from dotenv import load_dotenv
-from app.models import Users
+from app.models import User_Hist
 
 db.create_all()
 engine = create_engine('sqlite:///app/userdata.sqlite3', echo=False)
@@ -33,7 +33,7 @@ role = 'Hospital Front Desk'
 
 # Define the impersonated role with instructions
 impersonated_role = f"""
-    You are a hospital front desk AI agent. Patients are coming to you for help scheduling appointments for various illnesses. Be aware that you are dealing with personal and sensitive information.
+    You are a hospital front desk AI agent, please address yourself as a healthcare navigation AI agent. Patients are coming to you for help scheduling appointments for various illnesses. Be aware that you are dealing with personal and sensitive information.
     You must establish all of these details during the conversation. However, please speak at a natural pace, but professionally without reciting these questions word-for-word.
         1. "May I have your name and birthday to access your record?"
         2. What symptoms have they been having? Are there any others? Ask until they have no more issues to report.
@@ -141,7 +141,31 @@ def generate_json_summary(filename):
         max_tokens=2000,
         messages=messages
     )
-    print(output.choices[0].message["content"])
+    GPT_res = output.choices[0].message["content"]
+
+    print(GPT_res)
+    print(type(GPT_res))
+
+    user_name = GPT_res["name"]
+    user_birthday = GPT_res["birthday"]
+    user_symptoms = GPT_res["symptoms"]
+    user_allergies = GPT_res["allergies"]
+    user_chronic_illnesses = GPT_res["chronic_illnesses"]
+    user_doctor_status = GPT_res["doctor_status"]
+    user_allergies = GPT_res["allergies"]
+    user_medications = GPT_res["medications"]
+    user_summary = GPT_res["summary"]
+    user_past_diagnosis = GPT_res["medications"]
+    user_apptDate = GPT_res["apptDate"]
+
+    User_entry = User_Hist(user_name, user_birthday, user_symptoms, user_allergies, user_chronic_illnesses, user_doctor_status, user_allergies, user_medications, user_summary, user_past_diagnosis, user_apptDate)
+
+    db.session.add(User_entry)
+    db.session.commit()
+
+    return print(output.choices[0].message["content"])
+
+
 
 
 # Define app routes

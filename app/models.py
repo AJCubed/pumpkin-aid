@@ -1,14 +1,28 @@
 from app import db
 
-class Users(db.Model):
+class User_Hist(db.Model):
     id = db.Column('user_id', db.Integer, primary_key = True)
-    username = db.Column(db.String(100))
-    password = db.Column(db.String(50)) 
-    media_directory = db.Column(db.String(150))
-    account_type = db.Column(db.String(50))
+    name = db.Column(db.String(50))
+    birthday = db.Column(db.String(50)) 
+    symptoms = db.Column(db.String(200))
+    allergies = db.Column(db.String(50))
+    chronic_illnesses = db.Column(db.String(200))
+    doctor_status = db.Column(db.String(200))
+    medications = db.Column(db.String(200))
+    past_diagnosis = db.Column(db.String(200))
+    summary = db.Column(db.String(1000))
+    apptDate = db.Column(db.String(50))
+    
 
-    def __init__(self, username, password, media_directory, account_type):
-        self.username = username
-        self.password = password
-        self.media_directory = media_directory
-        self.account_type = account_type
+    def __init__(self, name, birthday, symptoms,allergies, chronic_illnesses, doctor_status, medications, summary, past_diagnosis, apptDate):
+        self.name = name
+        self.birthday = birthday
+        self.symptoms = symptoms
+        self.allergies = allergies
+        self.chronic_illnesses = chronic_illnesses
+        self.doctor_status = doctor_status
+        self.allergies = allergies
+        self.medications = medications
+        self.summary = summary
+        self.past_diagnosis = medications
+        self.apptDate = apptDate
