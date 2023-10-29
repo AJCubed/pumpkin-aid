@@ -2,14 +2,14 @@
 <html>
   <head>
     <link href="/static/styles/bootstrapmin.min.css" rel="stylesheet"/>
-    <link href="/static/styles/globals.css"rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/globals.css') }}">
     <link rel="icon" type="image/x-icon" href="/static/images/logo.png">
     <title>{% block title %}{% endblock %}</title>
     {% block head %}{% endblock %}
   </head>
 
-  <body style="font-weight: 500;font-family:Montserrat;font-size: medium;">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fix-top">
+  <body style="font-weight: 500;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: medium;">
+    <nav class="navbar navbar-expand-lg navbar-light fix-top orange-background">
       <div class="container-fluid">
         <img src="/static/images/logo.png" width="50px" height="50px">
         <button

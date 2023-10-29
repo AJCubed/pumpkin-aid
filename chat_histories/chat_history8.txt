@@ -1,10 +1,1 @@
 
-
-29/10 07:43:12 User: i'm not feeling well 
-29/10 07:43:12 Hi, I'm sorry to hear that. May I have your name and your birthday to access your record, please?
-
-29/10 07:43:24 User: john all, november 19th 1990 
-29/10 07:43:24 Thank you, John. What symptoms have you been experiencing? Are there any other issues you'd like to report?
-
-29/10 07:43:36 User: nausea, dizziness, and fever 
-29/10 07:43:36 I see. How long have you been experiencing these symptoms and how severe are they?
