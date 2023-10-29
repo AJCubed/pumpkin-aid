@@ -189,7 +189,7 @@ def info():
 def database():
     qresults = User_Hist.query.all()
     
-    return render_template("database.html", qresults=qresults)
+    return render_template("database.html", data = qresults)
 
 @app.route("/get")
 # Function for the bot response

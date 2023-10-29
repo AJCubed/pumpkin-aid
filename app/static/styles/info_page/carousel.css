@@ -2,6 +2,7 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
+
 body {
   padding-bottom: 3rem;
   color: #5a5a5a;
@@ -13,8 +14,8 @@ body {
 }
 
 @font-face {
-  font-family: Agbalumo;
-  src: url(/static/styles/fonts/Agbalumo-Regular.ttf/);
+  font-family: Montserrat;
+  src: url(/static/styles/fonts/Montserrat-VariableFont_wght.ttf/);
 }
 
 /* CUSTOMIZE THE CAROUSEL
