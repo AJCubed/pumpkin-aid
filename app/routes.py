@@ -69,13 +69,19 @@ output_format = f"""
 explicit_input = ""
 chatgpt_output = 'Chat log: /n'
 cwd = os.getcwd()
+chat_histories_folder = os.path.join(cwd, 'chat_histories')
+
+# Ensure the chat_histories folder exists or create it
+if not os.path.exists(chat_histories_folder):
+    os.makedirs(chat_histories_folder)
+
 i = 1
 
 # Find an available chat history file
-while os.path.exists(os.path.join(cwd, f'chat_history{i}.txt')):
+while os.path.exists(os.path.join(chat_histories_folder, f'chat_history{i}.txt')):
     i += 1
 
-history_file = os.path.join(cwd, f'chat_history{i}.txt')
+history_file = os.path.join(chat_histories_folder, f'chat_history{i}.txt')
 
 # Create a new chat history file
 with open(history_file, 'w') as f:
