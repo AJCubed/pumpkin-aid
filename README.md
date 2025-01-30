@@ -16,15 +16,11 @@ A Flask chatbot application that can schedule hospital appointments.
 
 ### Installation
 
-1. Clone this repository to your local machine:
+1. Clone this repository to your local machine
 
-   ```bash
-   git clone https://github.com/AJCubed/vandyhacks
-    ```
-
-2. 2. Navigate to the project directory:https://github.com/AJCubed/vandyhacks
+2. Navigate to the project directory
 ```bash
-cd vandyhacks
+cd pumpkin-aid
 ```
 3. Install the required Python packages:
 ```bash
